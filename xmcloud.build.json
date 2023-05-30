@@ -1,7 +1,4 @@
 {
-  "deployItems": {
-    "modules": ["Foundation.*", "Feature.*"]
-  },
     "renderingHosts": {
         "xmcloudpreview": {
             "path": "./src/rendering",
