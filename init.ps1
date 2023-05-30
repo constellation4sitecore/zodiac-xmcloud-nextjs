@@ -67,7 +67,8 @@ try {
     if ($null -ne (Get-Command mkcert.exe -ErrorAction SilentlyContinue)) {
         # mkcert installed in PATH
         $mkcert = "mkcert"
-    } elseif (-not (Test-Path $mkcert)) {
+    }
+    elseif (-not (Test-Path $mkcert)) {
         Write-Host "Downloading and installing mkcert certificate tool..." -ForegroundColor Green
         Invoke-WebRequest "https://github.com/FiloSottile/mkcert/releases/download/v1.4.1/mkcert-v1.4.1-windows-amd64.exe" -UseBasicParsing -OutFile mkcert.exe
         if ((Get-FileHash mkcert.exe).Hash -ne "1BE92F598145F61CA67DD9F5C687DFEC17953548D013715FF54067B34D7C3246") {
@@ -77,7 +78,7 @@ try {
     }
     Write-Host "Generating Traefik TLS certificate..." -ForegroundColor Green
     & $mkcert -install
-    & $mkcert "*.sxastarter.localhost"
+    & $mkcert "*.zodiac-xmcloud-nextjs.localhost"
     & $mkcert "xmcloudcm.localhost"
 
     # stash CAROOT path for messaging at the end of the script
@@ -98,7 +99,7 @@ finally {
 Write-Host "Adding Windows hosts file entries..." -ForegroundColor Green
 
 Add-HostsEntry "xmcloudcm.localhost"
-Add-HostsEntry "www.sxastarter.localhost"
+Add-HostsEntry "www.zodiac-xmcloud-nextjs.localhost"
 
 ###############################
 # Generate scjssconfig
@@ -134,7 +135,7 @@ if ($InitEnv) {
     Set-EnvFileVariable "CM_HOST" -Value "xmcloudcm.localhost"
 
     # RENDERING_HOST
-    Set-EnvFileVariable "RENDERING_HOST" -Value "www.sxastarter.localhost"
+    Set-EnvFileVariable "RENDERING_HOST" -Value "www.zodiac-xmcloud-nextjs.localhost"
 
     # REPORTING_API_KEY = random 64-128 chars
     Set-EnvFileVariable "REPORTING_API_KEY" -Value (Get-SitecoreRandomString 128 -DisallowSpecial)
@@ -162,16 +163,15 @@ if ($InitEnv) {
 Write-Host "Done!" -ForegroundColor Green
 
 Push-Location docker\traefik\certs
-try
-{
+try {
     Write-Host
-    Write-Host ("#"*75) -ForegroundColor Cyan
+    Write-Host ("#" * 75) -ForegroundColor Cyan
     Write-Host "To avoid HTTPS errors, set the NODE_EXTRA_CA_CERTS environment variable" -ForegroundColor Cyan
     Write-Host "using the following commmand:" -ForegroundColor Cyan
     Write-Host "setx NODE_EXTRA_CA_CERTS $caRoot"
     Write-Host
     Write-Host "You will need to restart your terminal or VS Code for it to take effect." -ForegroundColor Cyan
-    Write-Host ("#"*75) -ForegroundColor Cyan
+    Write-Host ("#" * 75) -ForegroundColor Cyan
 }
 catch {
     Write-Error "An error occurred while attempting to generate TLS certificate: $_"
