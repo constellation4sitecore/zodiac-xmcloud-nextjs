@@ -6,12 +6,12 @@
             {
                 "name": "templates",
                 "path": "/sitecore/templates/Project/Zodiac Manual",
-                "allowPushOperations": "CreateUpdateAndDelete"
+                "allowedPushOperations": "CreateUpdateAndDelete"
             },
             {
                 "name": "renderings",
                 "path": "/sitecore/layout/Renderings/Project/Zodiac Manual",
-                "allowPushOperations": "CreateUpdateAndDelete"
+                "allowedPushOperations": "CreateUpdateAndDelete"
             },
             {
                 "name": "placeholderSettings",
@@ -21,7 +21,7 @@
             {
                 "name": "contentRoot",
                 "path": "/sitecore/content/Zodiac Manual",
-                "allowPushOperations": "CreateOnly"
+                "allowedPushOperations": "CreateOnly"
             }
            
         ]
