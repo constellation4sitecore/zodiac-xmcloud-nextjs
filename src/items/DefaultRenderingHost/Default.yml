@@ -4,12 +4,15 @@ Parent: "895e25c4-12b2-4b2c-8233-82f3b79eef53"
 Template: "bc71d442-3e4f-46ba-887c-746e54f9bb83"
 Path: /sitecore/system/Settings/Services/Rendering Hosts/Default
 SharedFields:
+- ID: "3121c257-53cf-464a-b736-98b418876057"
+  Hint: AppName
+  Value: Default
 - ID: "e32c1801-79b3-4fc1-a9c4-3c6e6c2968ae"
   Hint: ServerSideRenderingEngineApplicationUrl
-  Value: 
+  Value: "http://rendering:3000"
 - ID: "fc76919b-0d7c-4732-865d-2af795fb38a4"
   Hint: ServerSideRenderingEngineEndpointUrl
-  Value: 
+  Value: "http://rendering:3000/api/editing/render"
 Languages:
 - Language: "de-DE"
   Fields:
@@ -53,7 +56,14 @@ Languages:
         sitecore\Admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "4270ae06-bd81-4e8a-898f-5e530cbb8544"
+      Value: "6de425f0-6b46-4d51-aca5-c98faf56cc67"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\roberto.armas@verndale.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230530T004515Z
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"

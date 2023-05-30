@@ -1,10 +1,10 @@
 {
-  "name": "sxastarter",
+  "name": "zodiac-xmcloud-nextjs",
   "description": "Application utilizing Sitecore JavaScript Services and Next.js",
   "version": "21.1.2",
   "private": true,
   "config": {
-    "appName": "sxastarter",
+    "appName": "Zodiac Manual",
     "rootPlaceholders": [
       "jss-main"
     ],
