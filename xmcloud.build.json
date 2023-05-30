@@ -1,11 +1,6 @@
 {
   "deployItems": {
-    "modules": [
-      "src/*.module.json",
-      "src/serialization/Foundation/*/*.module.json",
-      "src/serialization/Feature/*/*.module.json",
-      "src/serialization/Project/*/*.module.json"
-    ]
+    "modules": ["Foundation.*", "Feature.*", "Project.*"]
   },
     "renderingHosts": {
         "xmcloudpreview": {
