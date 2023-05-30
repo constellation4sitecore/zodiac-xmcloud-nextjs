@@ -5,9 +5,9 @@
     "src/serialization/Foundation/*/*.module.json",
     "src/serialization/Feature/*/*.module.json",
     "src/serialization/Project/*/*.module.json",
-    // Only uncomment npm packages when using for local push otherwise build pipelines will fail
-    //"npm:@constellation4sitecore/foundation-labels@0.1.1-beta.16",
-    //"npm:@constellation4sitecore/feature-navigation@0.1.1-beta.16"
+    "//comment - Only uncomment npm packages when using for local push otherwise build pipelines will fail",
+    "//npm:@constellation4sitecore/foundation-labels@0.1.1-beta.16",
+    "//npm:@constellation4sitecore/feature-navigation@0.1.1-beta.16"
   ],
   "plugins": [
     "Sitecore.DevEx.Extensibility.Serialization@5.1.25",
