@@ -5,17 +5,22 @@
         "includes": [
             {
                 "name": "templates",
-                "path": "/sitecore/templates/Project/ZodiacManual",
+                "path": "/sitecore/templates/Project/Zodiac Manual",
                 "allowPushOperations": "CreateUpdateAndDelete"
             },
             {
                 "name": "renderings",
-                "path": "/sitecore/layout/Renderings/Project/ZodiacManual",
+                "path": "/sitecore/layout/Renderings/Project/Zodiac Manual",
+                "allowPushOperations": "CreateUpdateAndDelete"
+            },
+            {
+                "name": "placeholderSettings",
+                "path": "/sitecore/layout/Placeholder Settings/Project/Zodiac Manual",
                 "allowPushOperations": "CreateUpdateAndDelete"
             },
             {
                 "name": "contentRoot",
-                "path": "/sitecore/content/ZodiacManual",
+                "path": "/sitecore/content/Zodiac Manual",
                 "allowPushOperations": "CreateOnly"
             }
            
