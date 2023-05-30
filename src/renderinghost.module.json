@@ -7,7 +7,7 @@
                 "name": "DefaultRenderingHost",
                 "path": "/sitecore/system/Settings/Services/Rendering Hosts/Default",
                 "scope": "singleItem",
-                "allowedPushOperations": "CreateOnly"
+                "allowedPushOperations": "createOnly"
             }
         ]
     }

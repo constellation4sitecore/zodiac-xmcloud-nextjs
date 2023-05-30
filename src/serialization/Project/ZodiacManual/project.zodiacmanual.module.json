@@ -1,29 +1,28 @@
 {
-    "$schema": "../../../../.sitecore/schemas/ModuleFile.schema.json",
-    "namespace": "Project.ZodiacManual",
-    "items": {
-        "includes": [
-            {
-                "name": "templates",
-                "path": "/sitecore/templates/Project/Zodiac Manual",
-                "allowedPushOperations": "CreateUpdateAndDelete"
-            },
-            {
-                "name": "renderings",
-                "path": "/sitecore/layout/Renderings/Project/Zodiac Manual",
-                "allowedPushOperations": "CreateUpdateAndDelete"
-            },
-            {
-                "name": "placeholderSettings",
-                "path": "/sitecore/layout/Placeholder Settings/Project/Zodiac Manual",
-                "allowPushOperations": "CreateUpdateAndDelete"
-            },
-            {
-                "name": "contentRoot",
-                "path": "/sitecore/content/Zodiac Manual",
-                "allowedPushOperations": "CreateOnly"
-            }
-           
-        ]
-    }
+  "$schema": "../../../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "Project.ZodiacManual",
+  "items": {
+    "includes": [
+      {
+        "name": "templates",
+        "path": "/sitecore/templates/Project/Zodiac Manual",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "renderings",
+        "path": "/sitecore/layout/Renderings/Project/Zodiac Manual",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "placeholderSettings",
+        "path": "/sitecore/layout/Placeholder Settings/Project/Zodiac Manual",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "contentRoot",
+        "path": "/sitecore/content/Zodiac Manual",
+        "allowedPushOperations": "createOnly"
+      }
+    ]
+  }
 }
