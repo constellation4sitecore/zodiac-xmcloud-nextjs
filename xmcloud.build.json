@@ -1,6 +1,6 @@
 {
   "deployItems": {
-    "modules": ["Foundation.*", "Feature.*", "Project.*"]
+    "modules": ["Foundation.*", "Feature.*"]
   },
     "renderingHosts": {
         "xmcloudpreview": {
