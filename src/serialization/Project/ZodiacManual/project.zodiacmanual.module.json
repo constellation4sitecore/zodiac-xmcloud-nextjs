@@ -17,11 +17,6 @@
         "name": "placeholderSettings",
         "path": "/sitecore/layout/Placeholder Settings/Project/Zodiac Manual",
         "allowedPushOperations": "createUpdateAndDelete"
-      },
-      {
-        "name": "contentRoot",
-        "path": "/sitecore/content/Zodiac Manual",
-        "allowedPushOperations": "createOnly"
       }
     ]
   }
