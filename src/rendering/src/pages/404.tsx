@@ -1,8 +1,12 @@
 import config from 'temp/config';
-import { GraphQLErrorPagesService, SitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
+import {
+  GraphQLErrorPagesService,
+  SitecoreContext,
+  ErrorPages,
+} from '@sitecore-jss/sitecore-jss-nextjs';
 import { SitecorePageProps } from 'lib/page-props';
 import NotFound from 'src/NotFound';
-import { componentFactory } from 'temp/componentFactory';
+import { componentBuilder } from 'temp/componentBuilder';
 import Layout from 'src/Layout';
 import { GetStaticProps } from 'next';
 import { siteResolver } from 'lib/site-resolver';
@@ -13,8 +17,11 @@ const Custom404 = (props: SitecorePageProps): JSX.Element => {
   }
 
   return (
-    <SitecoreContext componentFactory={componentFactory} layoutData={props.layoutData}>
-      <Layout layoutData={props.layoutData} />
+    <SitecoreContext
+      componentFactory={componentBuilder.getComponentFactory()}
+      layoutData={props.layoutData}
+    >
+      <Layout layoutData={props.layoutData} headLinks={props.headLinks} />
     </SitecoreContext>
   );
 };
@@ -25,10 +32,18 @@ export const getStaticProps: GetStaticProps = async (context) => {
     endpoint: config.graphQLEndpoint,
     apiKey: config.sitecoreApiKey,
     siteName: site.name,
-    language: context.locale || context.defaultLocale || config.defaultLanguage,
+    language: context.locale || config.defaultLanguage,
   });
+  let resultErrorPages: ErrorPages | null = null;
 
-  const resultErrorPages = await errorPagesService.fetchErrorPages();
+  if (!process.env.DISABLE_SSG_FETCH) {
+    try {
+      resultErrorPages = await errorPagesService.fetchErrorPages();
+    } catch (error) {
+      console.log('Error occurred while fetching error pages');
+      console.log(error);
+    }
+  }
 
   return {
     props: {
