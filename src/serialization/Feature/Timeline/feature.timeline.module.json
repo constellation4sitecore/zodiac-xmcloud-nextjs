@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "Feature.Timeline",
+  "items": {
+    "includes": [
+      {
+        "name": "templates",
+        "path": "/sitecore/templates/Feature/Timeline",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "renderings",
+        "path": "/sitecore/layout/Renderings/Feature/Timeline",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "placeholderSettings",
+        "path": "/sitecore/layout/Placeholder Settings/Feature/Timeline",
+        "allowedPushOperations": "createUpdateAndDelete"
+      }
+    ]
+  }
+}
