@@ -1,11 +1,10 @@
-import { Image, ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Image } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import { ComponentProps } from 'lib/component-props';
+import { MastheadMediaFields } from './types/MastheadMediaFields';
 
 type MastheadImageProps = ComponentProps & {
-  fields: {
-    mastheadImage: ImageField;
-  };
+  fields: MastheadMediaFields;
 };
 
 const MastheadImage = ({ fields }: MastheadImageProps): JSX.Element => {

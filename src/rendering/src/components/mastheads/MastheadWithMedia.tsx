@@ -1,13 +1,10 @@
-import { Field, Placeholder, RichText, Text } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Placeholder, RichText, Text } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import { ComponentProps } from 'lib/component-props';
+import { MastheadFields } from './types/MastheadFields';
 
 type MastheadWithMediaProps = ComponentProps & {
-  fields: {
-    heading: Field<string>;
-    subheading: Field<string>;
-    introText: Field<string>;
-  };
+  fields: MastheadFields;
   params: {
     position: string;
   };

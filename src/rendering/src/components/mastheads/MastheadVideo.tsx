@@ -1,14 +1,10 @@
-import { Image, ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Image } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import { ComponentProps } from 'lib/component-props';
-import { VideoProviderSetting } from 'src/types/Video/VideoProviderSettings';
+import { MastheadMediaFields } from './types/MastheadMediaFields';
 
 type MastheadVideoProps = ComponentProps & {
-  fields: {
-    mastheadImage: ImageField;
-    videoProvider: VideoProviderSetting;
-    videoID: string;
-  };
+  fields: MastheadMediaFields;
 };
 
 const MastheadVideo = ({ fields }: MastheadVideoProps): JSX.Element => {

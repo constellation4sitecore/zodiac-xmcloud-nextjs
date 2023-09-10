@@ -1,12 +1,10 @@
-import { Link, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Link } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import { ComponentProps } from 'lib/component-props';
+import { MastheadActionsFields } from './types/MastheadActionsFields';
 
 type MastheadActionsProps = ComponentProps & {
-  fields: {
-    primaryLink: LinkField;
-    secondaryLink: LinkField;
-  };
+  fields: MastheadActionsFields;
 };
 
 const MastheadActions = ({ fields }: MastheadActionsProps): JSX.Element => {
