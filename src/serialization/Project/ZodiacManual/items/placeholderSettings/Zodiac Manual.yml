@@ -1,5 +1,5 @@
 ﻿---
-ID: "2c025249-fac1-4d9a-86ca-9cd7a9aa5435"
+ID: "407cc0a3-bbd3-4752-a4e7-abc120118c10"
 Parent: "f5f0fbe3-61ad-4967-a5d8-8d760331d6a1"
 Template: "3d281bf8-5336-4686-9dd6-ab4ab5b3fd5d"
 Path: /sitecore/layout/Placeholder Settings/Project/Zodiac Manual
@@ -10,7 +10,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20230814T160958Z
+      Value: 20230518T050639Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -21,11 +21,11 @@ Languages:
         sitecore\roberto.armas@verndale.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "3e54fe37-9a39-43ee-8e56-1e2a3d5a5807"
+      Value: "5f7f7096-055b-4b14-8f39-a6c623dda740"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\roberto.armas@verndale.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20230814T160958Z
+      Value: 20230518T050639Z

@@ -1,15 +1,8 @@
 ﻿---
-ID: "c19a0f7d-537a-4586-90f3-5d6fc440c450"
-Parent: "cf8f8d76-f1a1-4c0e-a9d9-d2c1db4372ca"
-Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/Mastheads/Masthead/Content/subheading
-SharedFields:
-- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
-  Hint: Type
-  Value: "Single-Line Text"
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 200
+ID: "cf8f8d76-f1a1-4c0e-a9d9-d2c1db4372ca"
+Parent: "9e7f6aa1-8fe1-44d2-a734-6dfb463d9420"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/Mastheads/Masthead/Masthead Content
 Languages:
 - Language: en
   Versions:
@@ -28,7 +21,7 @@ Languages:
         sitecore\sebastian.aliaga@verndale.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "d37016d2-a07f-48dd-b696-b8baf7df3dc4"
+      Value: "6b87b8c5-fe9c-420e-a32a-810db01c19dd"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |

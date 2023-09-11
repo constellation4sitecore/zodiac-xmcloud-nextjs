@@ -10,12 +10,24 @@ SharedFields:
 - ID: "069a8361-b1cd-437c-8c32-a3be78941446"
   Hint: Placeholders
   Value: "{E8581421-31E2-4EB4-961C-B6E5B80AE36A}"
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/document_header.png
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: /sitecore/templates/Feature/Mastheads/Masthead
+  Value: 
+- ID: "7d8ae35f-9ed1-43b5-96a2-0a5f040d4e4e"
+  Hint: Open Properties after Add
+  Value: 0
+- ID: "a3411ff6-c978-40aa-b059-a49b9ca2209b"
+  Hint: Can select Page as a data source
+  Value: 1
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: ./Data
+  Value: 
+- ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
+  Hint: OtherProperties
+  Value: IsAutoDatasourceRendering=false&IsRenderingsWithDynamicPlaceholders=false
 Languages:
 - Language: en
   Versions:
@@ -34,11 +46,11 @@ Languages:
         sitecore\sebastian.aliaga@verndale.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "1067c6a8-ccd2-47db-80d2-efee0691f0b1"
+      Value: "fca76fe4-c2f7-4142-9a80-51c99d2d7fb0"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\sebastian.aliaga@verndale.com
+        sitecore\roberto.armas@verndale.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20230906T015240Z
+      Value: 20230910T224355Z

@@ -9,10 +9,7 @@ SharedFields:
   Value: MastheadActions
 - ID: "e391b526-d0c5-439d-803e-17512eae6222"
   Hint: Allowed Controls
-  Value: |
-    {84F8F31A-F4DA-470A-BF1A-C55AFA1027DD}
-    {701483F4-CA52-4843-AFB6-687973960651}
-    {675CC7ED-912E-46A3-B7BA-2D7F7262148A}
+  Value: "{84F8F31A-F4DA-470A-BF1A-C55AFA1027DD}"
 Languages:
 - Language: en
   Versions:
@@ -31,11 +28,11 @@ Languages:
         sitecore\sebastian.aliaga@verndale.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "4c94c9ff-2a6d-4f77-85f4-8b774d7918d2"
+      Value: "1dd7a71a-e867-4205-a3f1-a9dea6afab65"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\sebastian.aliaga@verndale.com
+        sitecore\roberto.armas@verndale.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20230906T013011Z
+      Value: 20230910T232359Z

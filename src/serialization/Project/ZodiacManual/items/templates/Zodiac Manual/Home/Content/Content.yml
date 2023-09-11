@@ -1,8 +1,8 @@
 ﻿---
-ID: "20152cc1-850b-4d8b-80aa-9b949ce38df0"
-Parent: "c2cc06f7-1c3e-430f-81a5-82fb2cece94e"
+ID: "0608db18-f1d8-4301-868e-3bcc95d67002"
+Parent: "df93d2da-dd79-4f22-9013-262656017adb"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Project/Zodiac Manual/Page/Content/Content
+Path: /sitecore/templates/Project/Zodiac Manual/Home/Content/Content
 SharedFields:
 - ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
   Hint: Source
@@ -31,11 +31,11 @@ Languages:
         sitecore\roberto.armas@verndale.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "1c9fdb0e-74c8-48ac-afd6-72b15fd7ab20"
+      Value: "ceafdac8-68e4-4bd3-a790-e28c8d0ca30f"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\roberto.armas@verndale.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20230911T054616Z
+      Value: 20230910T214846Z
