@@ -1,6 +1,7 @@
 import { Placeholder, RichText, Text } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { MastheadFields } from './types/MastheadFields';
+import { withDatasourceRendering } from '@constellation4sitecore/foundation-enhancers';
 
 type SimpleMastheadProps = ComponentProps & {
   fields: MastheadFields;
@@ -25,4 +26,4 @@ const SimpleMasthead = ({ fields, rendering }: SimpleMastheadProps): JSX.Element
   </div>
 );
 
-export default SimpleMasthead;
+export default withDatasourceRendering()<SimpleMastheadProps>(SimpleMasthead);

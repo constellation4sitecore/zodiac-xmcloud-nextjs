@@ -2,16 +2,21 @@ import { Placeholder, RichText, Text } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import { ComponentProps } from 'lib/component-props';
 import { MastheadFields } from './types/MastheadFields';
+import { withDatasourceRendering } from '@constellation4sitecore/foundation-enhancers';
 
 type MastheadWithMediaProps = ComponentProps & {
   fields: MastheadFields;
-  params: {
+  variantParams: {
     position: string;
   };
 };
 
-const _MastheadWithMedia = ({ fields, params, rendering }: MastheadWithMediaProps): JSX.Element => (
-  <div className={`masthead masthead--${params.position}-media`}>
+const _MastheadWithMedia = ({
+  fields,
+  variantParams,
+  rendering,
+}: MastheadWithMediaProps): JSX.Element => (
+  <div className={`masthead masthead--${variantParams.position}-media`}>
     <div className="masthead__inner container">
       <div className="masthead__media">
         <Placeholder name="MastheadMedia" rendering={rendering} />
@@ -33,12 +38,14 @@ const _MastheadWithMedia = ({ fields, params, rendering }: MastheadWithMediaProp
 );
 
 const _Default = (props: MastheadWithMediaProps): JSX.Element => {
-  return <_MastheadWithMedia {...props} params={{ position: 'left' }} />;
+  return <_MastheadWithMedia {...props} variantParams={{ position: 'left' }} />;
 };
 
 const _WithMediaRight = (props: MastheadWithMediaProps): JSX.Element => {
-  return <_MastheadWithMedia {...props} params={{ position: 'right' }} />;
+  return <_MastheadWithMedia {...props} variantParams={{ position: 'right' }} />;
 };
 
-export const Default = _Default;
-export const WithMediaRight = _WithMediaRight;
+export const MastheadWithMedia = _Default;
+
+export default withDatasourceRendering()<MastheadWithMediaProps>(MastheadWithMedia);
+export const WithMediaRight = withDatasourceRendering()<MastheadWithMediaProps>(_WithMediaRight);

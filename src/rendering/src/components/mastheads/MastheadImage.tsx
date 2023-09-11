@@ -10,7 +10,7 @@ type MastheadImageProps = ComponentProps & {
 const MastheadImage = ({ fields }: MastheadImageProps): JSX.Element => {
   return (
     <picture>
-      <Image field={fields.mastheadImage.value} className="masthead__image" />
+      <Image field={fields.mastheadImage} className="masthead__image" />
     </picture>
   );
 };
