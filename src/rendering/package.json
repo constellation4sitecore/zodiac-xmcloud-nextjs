@@ -38,7 +38,7 @@
     "@constellation4sitecore/feature-navigation": "^1.0.1-beta.0",
     "@constellation4sitecore/feature-page-analytics-scripts": "^1.0.1-beta.0",
     "@constellation4sitecore/foundation-data": "^1.0.1-beta.0",
-    "@constellation4sitecore/foundation-enhancers": "^1.0.1-beta.0",
+    "@constellation4sitecore/foundation-enhancers": "^1.0.0",
     "@constellation4sitecore/foundation-labels": "^1.0.1-beta.0",
     "@constellation4sitecore/foundation-layout": "^1.0.1-beta.0",
     "@constellation4sitecore/foundation-mapper": "^1.0.1-beta.0",

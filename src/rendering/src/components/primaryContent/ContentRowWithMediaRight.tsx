@@ -1,5 +1,4 @@
 import {
-  Field,
   Placeholder,
   RichText,
   Text,
@@ -7,13 +6,10 @@ import {
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import { ComponentProps } from 'lib/component-props';
+import { ContentRowWithMediaFields } from './types/ContentRowWithMediaFields';
 
 type ContentRowWithMediaRightProps = ComponentProps & {
-  fields: {
-    heading: Field<string>;
-    subheading: Field<string>;
-    copy: Field<string>;
-  };
+  fields: ContentRowWithMediaFields;
 };
 
 const ContentRowWithMediaRight = ({

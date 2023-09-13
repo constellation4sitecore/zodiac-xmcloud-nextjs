@@ -1,5 +1,4 @@
 import {
-  Field,
   Placeholder,
   RichText,
   Text,
@@ -7,12 +6,10 @@ import {
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import { ComponentProps } from 'lib/component-props';
+import { AccordionContainerFields } from './types/AccordionContainerFields';
 
 type AccordionContainerProps = ComponentProps & {
-  fields: {
-    heading: Field<string>;
-    introText: Field<string>;
-  };
+  fields: AccordionContainerFields;
 };
 
 const AccordionContainer = ({ fields, rendering }: AccordionContainerProps): JSX.Element => (

@@ -1,5 +1,4 @@
 import {
-  Field,
   Placeholder,
   RichText,
   Text,
@@ -7,13 +6,10 @@ import {
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import { ComponentProps } from 'lib/component-props';
+import { AccordionTabFields } from './types/AccordionTabFields';
 
 type AccordionTabProps = ComponentProps & {
-  fields: {
-    heading: Field<string>;
-    copy: Field<string>;
-    expanded: Field<boolean>;
-  };
+  fields: AccordionTabFields;
 };
 
 const AccordionTab = ({ fields, rendering }: AccordionTabProps): JSX.Element => {
@@ -22,7 +18,7 @@ const AccordionTab = ({ fields, rendering }: AccordionTabProps): JSX.Element => 
     <>
       <article className="accordion__item">
         <button className="accordion__item-trigger" aria-expanded={expandedValue}>
-          <Text field={fields.heading} tag="h3" />
+          <Text className="accordion__item-header" field={fields.heading} tag="h3" />
           <span className="accordion__item-icon">
             <svg viewBox="0 0 14 2" className="accordion__item-icon-minus">
               <use xlinkHref="#minus" />
@@ -35,7 +31,7 @@ const AccordionTab = ({ fields, rendering }: AccordionTabProps): JSX.Element => 
         <div role="region" className="accordion__item-panel">
           <div className="accordion__item-content">
             <div className="rtf accordion__item-description">
-              <RichText field={fields.copy} />
+              <RichText className="accordion__item-copy" field={fields.copy} />
               <Placeholder name="AccordionTabContent" rendering={rendering} />
             </div>
           </div>

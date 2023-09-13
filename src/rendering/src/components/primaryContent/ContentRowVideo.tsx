@@ -1,14 +1,10 @@
-import { Image, ImageField, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Image, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import { ComponentProps } from 'lib/component-props';
-import { VideoProvider } from 'src/types/Video/VideoProvider';
+import { ContentRowVideoFields } from './types/ContentRowVideoFields';
 
 type ContentRowVideoProps = ComponentProps & {
-  fields: {
-    sectionImage: ImageField;
-    videoProvider: VideoProvider;
-    videoID: string;
-  };
+  fields: ContentRowVideoFields;
 };
 
 const ContentRowVideo = ({ fields }: ContentRowVideoProps): JSX.Element => {

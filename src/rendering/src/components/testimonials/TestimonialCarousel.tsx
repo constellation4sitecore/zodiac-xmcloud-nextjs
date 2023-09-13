@@ -1,5 +1,4 @@
 import {
-  Field,
   Placeholder,
   RichText,
   Text,
@@ -7,12 +6,10 @@ import {
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import { ComponentProps } from 'lib/component-props';
+import { TestimonialCarouselFields } from './types/TestimonialCarouselFields';
 
 type TestimonialCarouselProps = ComponentProps & {
-  fields: {
-    heading: Field<string>;
-    intro: Field<string>;
-  };
+  fields: TestimonialCarouselFields;
 };
 
 const TestimonialCarousel = ({ fields, rendering }: TestimonialCarouselProps): JSX.Element => (

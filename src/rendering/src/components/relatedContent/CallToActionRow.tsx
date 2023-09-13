@@ -1,24 +1,16 @@
 import {
-  Field,
   Image,
-  ImageField,
   Link,
-  LinkField,
   RichText,
   Text,
   withDatasourceCheck,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import { ComponentProps } from 'lib/component-props';
+import { CallToActionRowFields } from './types/CallToActionRowFields';
 
 type CallToActionRowProps = ComponentProps & {
-  fields: {
-    heading: Field<string>;
-    copy: Field<string>;
-    link: LinkField;
-    backgroundImage: ImageField;
-    thumbnailImage: ImageField;
-  };
+  fields: CallToActionRowFields;
 };
 
 const _CallToActionRow = ({ fields }: CallToActionRowProps): JSX.Element => (

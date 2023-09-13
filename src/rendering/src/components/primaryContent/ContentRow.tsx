@@ -1,5 +1,4 @@
 import {
-  Field,
   Placeholder,
   RichText,
   Text,
@@ -7,13 +6,10 @@ import {
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import { ComponentProps } from 'lib/component-props';
+import { ContentRowFields } from './types/ContentRowFields';
 
 type ContentRowProps = ComponentProps & {
-  fields: {
-    heading: Field<string>;
-    subheading: Field<string>;
-    copy: Field<string>;
-  };
+  fields: ContentRowFields;
 };
 
 const ContentRow = ({ fields, rendering }: ContentRowProps): JSX.Element => (

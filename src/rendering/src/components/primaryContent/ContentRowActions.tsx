@@ -1,12 +1,10 @@
-import { Link, LinkField, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Link, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import { ComponentProps } from 'lib/component-props';
+import { ContentRowActionsFields } from './types/ContentRowActionsFields';
 
 type ContentRowActionsProps = ComponentProps & {
-  fields: {
-    primaryLink: LinkField;
-    secondaryLink: LinkField;
-  };
+  fields: ContentRowActionsFields;
 };
 
 const ContentRowActions = ({ fields }: ContentRowActionsProps): JSX.Element => {

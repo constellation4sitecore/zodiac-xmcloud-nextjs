@@ -1,9 +1,7 @@
 import { getLabelsForView } from '@constellation4sitecore/foundation-labels';
 import {
-  Field,
   GetStaticComponentProps,
   Image,
-  ImageField,
   RichText,
   Text,
   withDatasourceCheck,
@@ -11,16 +9,10 @@ import {
 
 import { ComponentProps } from 'lib/component-props';
 import { VideoLabels, videoLabelsId } from 'src/labels/videos/VideoLabels';
-import { VideoProviderSetting } from 'src/types/Video/VideoProviderSettings';
+import { VideoRowFields } from './types/VideoRowFields';
 
 type VideoRowProps = ComponentProps & {
-  fields: {
-    heading: Field<string>;
-    sectionImage: ImageField;
-    caption: Field<string>;
-    videoID: string;
-    videoProvider: VideoProviderSetting;
-  };
+  fields: VideoRowFields;
   labels: VideoLabels;
 };
 

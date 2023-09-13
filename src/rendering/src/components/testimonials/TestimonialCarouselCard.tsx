@@ -1,21 +1,10 @@
-import {
-  Field,
-  Image,
-  ImageField,
-  RichText,
-  Text,
-  withDatasourceCheck,
-} from '@sitecore-jss/sitecore-jss-nextjs';
+import { Image, RichText, Text, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import { ComponentProps } from 'lib/component-props';
+import { TestimonialCarouselCardFields } from './types/TestimonialCarouselCardFields';
 
 type TestimonialCarouselCardProps = ComponentProps & {
-  fields: {
-    fullName: Field<string>;
-    title: Field<string>;
-    quote: Field<string>;
-    thumbnail: ImageField;
-  };
+  fields: TestimonialCarouselCardFields;
 };
 
 const TestimonialCarouselCard = ({ fields }: TestimonialCarouselCardProps): JSX.Element => (

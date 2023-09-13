@@ -1,11 +1,10 @@
-import { Field, Placeholder, Text, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Placeholder, Text, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import { ComponentProps } from 'lib/component-props';
+import { TimelineContainerFields } from './types/TimelineContainerFields';
 
 type TimelineContainerProps = ComponentProps & {
-  fields: {
-    heading: Field<string>;
-  };
+  fields: TimelineContainerFields;
 };
 
 const TimelineContainer = ({ fields, rendering }: TimelineContainerProps): JSX.Element => (

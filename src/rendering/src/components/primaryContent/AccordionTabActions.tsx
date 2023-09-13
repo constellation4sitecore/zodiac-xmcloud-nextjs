@@ -1,12 +1,10 @@
-import { Link, LinkField, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Link, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import { ComponentProps } from 'lib/component-props';
+import { AccordionTabActionsFields } from './types/AccordionTabActionsFields';
 
 type AccordionTabActionsProps = ComponentProps & {
-  fields: {
-    primaryLink: LinkField;
-    secondaryLink: LinkField;
-  };
+  fields: AccordionTabActionsFields;
 };
 
 const AccordionTabActions = ({ fields }: AccordionTabActionsProps): JSX.Element => {

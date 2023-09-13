@@ -1,5 +1,4 @@
 import {
-  Field,
   Placeholder,
   RichText,
   Text,
@@ -7,13 +6,10 @@ import {
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import { ComponentProps } from 'lib/component-props';
+import { CallToActionCardRowFields } from './types/CallToActionCardRowFields';
 
 type CallToActionCardRowProps = ComponentProps & {
-  fields: {
-    heading: Field<string>;
-    copy: Field<string>;
-    trailingCopy: Field<string>;
-  };
+  fields: CallToActionCardRowFields;
 };
 
 const CallToActionCardRow = ({ fields, rendering }: CallToActionCardRowProps): JSX.Element => (

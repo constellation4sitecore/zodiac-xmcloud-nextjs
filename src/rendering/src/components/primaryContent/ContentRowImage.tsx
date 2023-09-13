@@ -1,11 +1,10 @@
-import { Image, ImageField, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Image, withDatasourceCheck } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import { ComponentProps } from 'lib/component-props';
+import { ContentRowImageFields } from './types/ContentRowImageFields';
 
 type ContentRowImageProps = ComponentProps & {
-  fields: {
-    sectionImage: ImageField;
-  };
+  fields: ContentRowImageFields;
 };
 
 const ContentRowImage = ({ fields }: ContentRowImageProps): JSX.Element => (
