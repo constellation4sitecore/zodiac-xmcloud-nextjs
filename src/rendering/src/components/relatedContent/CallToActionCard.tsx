@@ -8,7 +8,7 @@ type CallToActionCardProps = ComponentProps & {
   fields: CallToActionCardFields;
 };
 
-const CallToActionCardZodiac = ({ fields }: CallToActionCardProps): JSX.Element => {
+export const CallToActionCardZodiac = ({ fields }: CallToActionCardProps): JSX.Element => {
   const ctx = useSitecoreContext();
   console.log(ctx.sitecoreContext.site);
   return (
@@ -33,7 +33,7 @@ const CallToActionCardZodiac = ({ fields }: CallToActionCardProps): JSX.Element 
   );
 };
 
-const CallToActionCardReuseLibrary = ({ fields }: CallToActionCardProps): JSX.Element => {
+export const CallToActionCardReuseLibrary = ({ fields }: CallToActionCardProps): JSX.Element => {
   const ctx = useSitecoreContext();
   console.log(ctx.sitecoreContext.site);
   return (
@@ -58,7 +58,7 @@ const CallToActionCardReuseLibrary = ({ fields }: CallToActionCardProps): JSX.El
   );
 };
 
-const CallToActionCardDefault = ({ fields }: CallToActionCardProps): JSX.Element => {
+export const CallToActionCardDefault = ({ fields }: CallToActionCardProps): JSX.Element => {
   const ctx = useSitecoreContext();
   console.log(ctx.sitecoreContext.site);
   return (
@@ -83,10 +83,10 @@ const CallToActionCardDefault = ({ fields }: CallToActionCardProps): JSX.Element
   );
 };
 
-const CallToActionCard = withDatasourceRendering({
-  default: CallToActionCardDefault,
+const CallToActionCard = withDatasourceRendering()<CallToActionCardProps>({
   'Reuse Library': CallToActionCardReuseLibrary,
   'Zodiac Manual': CallToActionCardZodiac,
+  default: CallToActionCardDefault,
 });
 
 export default CallToActionCard;
