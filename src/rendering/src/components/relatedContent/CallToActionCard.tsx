@@ -10,10 +10,9 @@ type CallToActionCardProps = ComponentProps & {
 
 export const CallToActionCardZodiac = ({ fields }: CallToActionCardProps): JSX.Element => {
   const ctx = useSitecoreContext();
-  console.log(ctx.sitecoreContext.site);
   return (
     <>
-      <aside className="swiper-slide">
+      <aside className="call-to-action-card">
         {ctx.sitecoreContext.pageEditing ||
           ((fields.thumbnailImage.value?.src == null || fields.thumbnailImage.value.src == '') && (
             <picture className="card-content__image">
@@ -21,7 +20,7 @@ export const CallToActionCardZodiac = ({ fields }: CallToActionCardProps): JSX.E
             </picture>
           ))}
         <div className="content-card__wrapper">
-          <span>Zodiac Maual</span>
+          <span>{ctx.sitecoreContext.site?.name}</span>
           <Text field={fields.heading} tag="h6" className="content-card__heading" />
           <RichText field={fields.copy} className="content-card__copy" />
           <div className="content-card__actions">
@@ -35,10 +34,9 @@ export const CallToActionCardZodiac = ({ fields }: CallToActionCardProps): JSX.E
 
 export const CallToActionCardReuseLibrary = ({ fields }: CallToActionCardProps): JSX.Element => {
   const ctx = useSitecoreContext();
-  console.log(ctx.sitecoreContext.site);
   return (
     <>
-      <aside className="swiper-slide">
+      <aside className="call-to-action-card">
         {ctx.sitecoreContext.pageEditing ||
           ((fields.thumbnailImage.value?.src == null || fields.thumbnailImage.value.src == '') && (
             <picture className="card-content__image">
@@ -46,7 +44,7 @@ export const CallToActionCardReuseLibrary = ({ fields }: CallToActionCardProps):
             </picture>
           ))}
         <div className="content-card__wrapper">
-          <span>Reuse Library</span>
+          <span>{ctx.sitecoreContext.site?.name}</span>
           <Text field={fields.heading} tag="h6" className="content-card__heading" />
           <RichText field={fields.copy} className="content-card__copy" />
           <div className="content-card__actions">
@@ -60,10 +58,9 @@ export const CallToActionCardReuseLibrary = ({ fields }: CallToActionCardProps):
 
 export const CallToActionCardDefault = ({ fields }: CallToActionCardProps): JSX.Element => {
   const ctx = useSitecoreContext();
-  console.log(ctx.sitecoreContext.site);
   return (
     <>
-      <aside className="swiper-slide">
+      <aside className="call-to-action-card">
         {ctx.sitecoreContext.pageEditing ||
           ((fields.thumbnailImage.value?.src == null || fields.thumbnailImage.value.src == '') && (
             <picture className="card-content__image">
@@ -71,7 +68,7 @@ export const CallToActionCardDefault = ({ fields }: CallToActionCardProps): JSX.
             </picture>
           ))}
         <div className="content-card__wrapper">
-          <span>Default</span>
+          <span>{ctx.sitecoreContext.site?.name}</span>
           <Text field={fields.heading} tag="h6" className="content-card__heading" />
           <RichText field={fields.copy} className="content-card__copy" />
           <div className="content-card__actions">

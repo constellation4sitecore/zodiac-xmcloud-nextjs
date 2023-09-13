@@ -1,0 +1,16 @@
+.column-row {
+    margin: auto;
+    padding: 1rem;
+
+    &__heading {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+    }
+
+    &__copy {
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+}

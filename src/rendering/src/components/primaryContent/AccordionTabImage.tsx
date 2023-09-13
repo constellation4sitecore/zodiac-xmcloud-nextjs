@@ -9,8 +9,8 @@ type AccordionTabImageProps = ComponentProps & {
 
 const AccordionTabImage = ({ fields }: AccordionTabImageProps): JSX.Element => (
   <div>
-    <picture>
-      <Image field={fields.sectionImage} />
+    <picture className="accordion-tab__picture">
+      <Image field={fields.sectionImage} clasName="accordion-tab__image" />
     </picture>
   </div>
 );
