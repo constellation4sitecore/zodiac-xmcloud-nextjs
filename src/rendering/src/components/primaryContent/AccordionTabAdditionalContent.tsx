@@ -9,7 +9,7 @@ type AccordionTabAdditionalContent = ComponentProps & {
 
 const AccordionTabAdditionalContent = ({ fields }: AccordionTabAdditionalContent): JSX.Element => (
   <>
-    <Text field={fields.copy} />
+    <Text className="accordion__additional-content" field={fields.copy} />
   </>
 );
 
