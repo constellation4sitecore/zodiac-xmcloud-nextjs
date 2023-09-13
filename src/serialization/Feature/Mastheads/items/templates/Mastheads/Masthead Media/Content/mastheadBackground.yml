@@ -4,6 +4,9 @@ Parent: "90ab744a-650e-4d38-b296-9a673e7c6b58"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
 Path: /sitecore/templates/Feature/Mastheads/Masthead Media/Content/mastheadBackground
 SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: /sitecore/media library/Feature/Mastheads/Masthead Image
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
   Value: Image
@@ -28,11 +31,11 @@ Languages:
         sitecore\sebastian.aliaga@verndale.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "c0521d8f-90f4-4e48-ab50-959c736d61ae"
+      Value: "2aa4e900-6dda-4e28-9728-330fae8118b0"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\sebastian.aliaga@verndale.com
+        sitecore\roberto.armas@verndale.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20230906T012520Z
+      Value: 20230913T043406Z
