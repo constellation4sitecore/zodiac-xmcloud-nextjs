@@ -17,6 +17,11 @@
         "name": "placeholderSettings",
         "path": "/sitecore/layout/Placeholder Settings/Feature/Mastheads",
         "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "mediaLibrary",
+        "path": "/sitecore/media library/Feature/Mastheads",
+        "allowedPushOperations": "createOnly"
       }
     ]
   }
