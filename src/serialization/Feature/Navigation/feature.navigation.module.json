@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "Feature.Navigation",
+  "items": {
+    "includes": [
+      {
+        "name": "renderings",
+        "path": "/sitecore/layout/Renderings/Feature/Navigation",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "placeholderSettings",
+        "path": "/sitecore/layout/Placeholder Settings/Feature/Navigation",
+        "allowedPushOperations": "createUpdateAndDelete"
+      }
+    ]
+  }
+}
