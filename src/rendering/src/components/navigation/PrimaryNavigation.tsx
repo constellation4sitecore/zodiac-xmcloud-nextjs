@@ -23,6 +23,18 @@ const PrimaryNavigation = ({ navigation }: PrimaryNavigationProps) => (
             </li>
           );
         }
+        if (item.template.name == 'Link Group') {
+          return (
+            <li key={item.id}>
+              <button className="link">
+                <span>
+                  {item.name}
+                  <ul></ul>
+                </span>
+              </button>
+            </li>
+          );
+        }
         return;
       })}
     </ul>
