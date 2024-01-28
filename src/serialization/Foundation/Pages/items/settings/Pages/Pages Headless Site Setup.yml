@@ -1,12 +1,8 @@
 ﻿---
-ID: "b9af7e4e-efac-4e6f-bd6f-13410dcedadf"
-Parent: "4b13c477-58d4-405a-869d-3f778b53b6ae"
-Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Foundation/Pages/Abstract/Landing Page
-SharedFields:
-- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
-  Hint: __Base template
-  Value: "{87113373-9B51-4EC5-8C4C-74EBB06F05F6}"
+ID: "372e817a-e884-43b2-8f4a-971cb904f176"
+Parent: "a9eaf09c-0f93-4329-8182-a8cf00ae5e1d"
+Template: "bed31d6f-d968-45a9-b54e-12d7f977d861"
+Path: /sitecore/system/Settings/Foundation/Pages/Pages Headless Site Setup
 Languages:
 - Language: en
   Versions:
@@ -14,7 +10,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20230910T214032Z
+      Value: 20240128T022552Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -25,11 +21,14 @@ Languages:
         sitecore\roberto.armas@verndale.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "06e4b44e-968f-4232-81a0-ab8b868c42ee"
+      Value: "c48a53f2-c189-43ba-bfb1-cf31c30cda01"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\roberto.armas@verndale.com
+    - ID: "c202067e-7fab-4606-afb4-e76df2185ddc"
+      Hint: Name
+      Value: Pages
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240128T022202Z
+      Value: 20240128T022552Z

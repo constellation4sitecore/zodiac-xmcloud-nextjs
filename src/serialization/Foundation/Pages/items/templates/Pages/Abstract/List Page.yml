@@ -6,7 +6,7 @@ Path: /sitecore/templates/Foundation/Pages/Abstract/List Page
 SharedFields:
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
-  Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
+  Value: "{87113373-9B51-4EC5-8C4C-74EBB06F05F6}"
 Languages:
 - Language: en
   Versions:
@@ -25,11 +25,11 @@ Languages:
         sitecore\roberto.armas@verndale.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "d2c012de-a884-4994-bbdd-483ab3c9c7af"
+      Value: "40db3f29-0839-4a93-a3c9-5411547c4c5c"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\roberto.armas@verndale.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20230910T214020Z
+      Value: 20240128T022145Z

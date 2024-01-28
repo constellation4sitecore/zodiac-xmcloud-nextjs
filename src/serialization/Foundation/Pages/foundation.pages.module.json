@@ -7,6 +7,11 @@
         "name": "templates",
         "path": "/sitecore/templates/Foundation/Pages",
         "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "settings",
+        "path": "/sitecore/system/Settings/Foundation/Pages",
+        "allowedPushOperations": "createUpdateAndDelete"
       }
     ]
   }
