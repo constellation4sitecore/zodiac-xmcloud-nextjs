@@ -26,6 +26,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
   const fields = route?.fields as RouteFields;
   const isPageEditing = layoutData.sitecore.context.pageEditing;
   const mainClassPageEditing = isPageEditing ? 'editing-mode' : 'prod-mode';
+  const siteClass = layoutData.sitecore.context.site?.name == 'Zodiac Manual' ? 'zodiac' : 'reuse';
 
   return (
     <>
@@ -39,7 +40,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
       </Head>
 
       {/* root placeholder for the app, which we add components to using route data */}
-      <div className={mainClassPageEditing}>
+      <div className={mainClassPageEditing + ' ' + siteClass}>
         <header>
           <div id="header">{route && <Placeholder name="headless-header" rendering={route} />}</div>
         </header>

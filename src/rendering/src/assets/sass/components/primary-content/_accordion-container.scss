@@ -1,0 +1,13 @@
+.accordion {
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+    &__title {
+        font-size: 4.5rem;
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        font-size: 1.5rem;
+    }
+}

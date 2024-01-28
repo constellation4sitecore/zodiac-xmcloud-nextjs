@@ -1,0 +1,40 @@
+﻿---
+ID: "87113373-9b51-4ec5-8c4c-74ebb06f05f6"
+Parent: "4b13c477-58d4-405a-869d-3f778b53b6ae"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Foundation/Pages/Abstract/Page
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {47151711-26CA-434E-8132-D3E0B7D26683}
+    {371D5FBB-5498-4D94-AB2B-E3B70EEBE78C}
+    {4414A1F9-826A-4647-8DF4-ED6A95E64C43}
+    {6650FB34-7EA1-4245-A919-5CC0F002A6D7}
+    {F39A594A-7BC9-4DB0-BAA1-88543409C1F9}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230910T214008Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\roberto.armas@verndale.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\roberto.armas@verndale.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "a3ad5860-dfae-4f1a-b91f-39a01f9d1d98"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\roberto.armas@verndale.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230910T214122Z

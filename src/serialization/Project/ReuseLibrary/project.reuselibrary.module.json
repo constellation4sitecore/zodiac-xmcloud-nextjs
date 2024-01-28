@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "Project.ReuseLibrary",
+  "items": {
+    "includes": [
+      {
+        "name": "templates",
+        "path": "/sitecore/templates/Project/Reuse Library",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "renderings",
+        "path": "/sitecore/layout/Renderings/Project/Reuse Library",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "placeholderSettings",
+        "path": "/sitecore/layout/Placeholder Settings/Project/Reuse Library",
+        "allowedPushOperations": "createUpdateAndDelete"
+      }
+    ]
+  }
+}

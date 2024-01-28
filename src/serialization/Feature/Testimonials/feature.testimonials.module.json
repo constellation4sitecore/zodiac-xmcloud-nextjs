@@ -1,0 +1,23 @@
+{
+  "$schema": "../../../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "Feature.Testimonials",
+  "items": {
+    "includes": [
+      {
+        "name": "templates",
+        "path": "/sitecore/templates/Feature/Testimonials",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "renderings",
+        "path": "/sitecore/layout/Renderings/Feature/Testimonials",
+        "allowedPushOperations": "createUpdateAndDelete"
+      },
+      {
+        "name": "placeholderSettings",
+        "path": "/sitecore/layout/Placeholder Settings/Feature/Testimonials",
+        "allowedPushOperations": "createUpdateAndDelete"
+      }
+    ]
+  }
+}

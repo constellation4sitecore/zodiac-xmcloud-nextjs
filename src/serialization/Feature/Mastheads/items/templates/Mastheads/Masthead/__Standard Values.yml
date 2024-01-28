@@ -1,0 +1,40 @@
+﻿---
+ID: "bddd7487-a5b1-4291-92e3-53811eaaec4d"
+Parent: "9e7f6aa1-8fe1-44d2-a734-6dfb463d9420"
+Template: "9e7f6aa1-8fe1-44d2-a734-6dfb463d9420"
+Path: /sitecore/templates/Feature/Mastheads/Masthead/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "100b22db-3626-4109-81c8-b9810e395e14"
+      Hint: introText
+      Value:  <p>Sed vitae odio sit amet nibh eleifend vestibulum in id elit. Fusce eu odio ut nisi consectetur vestibulum. Suspendisse rutrum, ante vel mattis euismod, velit risus posuere libero, posuere pharetra velit ex nec dolor. Proin lobortis felis quis volutpat vulputate.</p>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20230910T214922Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\roberto.armas@verndale.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\roberto.armas@verndale.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "716c44c4-7296-4374-8dd3-bc20fe8e444d"
+    - ID: "a8e6ccd5-49f0-4434-947a-d8c1e9bcb378"
+      Hint: heading
+      Value: $name
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\roberto.armas@verndale.com
+    - ID: "c19a0f7d-537a-4586-90f3-5d6fc440c450"
+      Hint: subheading
+      Value: Vestibulum sit amet est at erat elementum mattis
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20230910T215156Z

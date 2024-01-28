@@ -1,0 +1,33 @@
+
+.masthead {
+  background: rgb(174, 211, 174);
+}
+
+.masthead__actions{
+    & .btn {
+        font-size: $text-size-14;
+    }
+}
+
+.masthead--right-media{
+    &::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #0f9647;
+        margin-top: 40px;
+    }
+}
+
+
+.masthead--left-media{
+    &::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #d9d9d9;
+        margin-top: 40px;
+    }
+}

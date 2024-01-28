@@ -1,0 +1,17 @@
+.masthead--simple {
+    margin-top: 15px;
+    margin-bottom: 30px;
+
+    & .masthead {
+        &__heading{
+            font-size: 4.5rem;
+            margin-bottom: 20px;
+        }
+        &__subheading{
+            font-size: 1.5rem;
+        }
+        &__copy{
+            margin-bottom: 0;
+        }
+    }
+}
